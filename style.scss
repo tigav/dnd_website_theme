@@ -1,0 +1,71 @@
+/*
+ Theme Name:   GeneratePress Child
+ Theme URI:    http://designanddata.net/GeneratePress-child/
+ Description:  GeneratePress Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     GeneratePress
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  GeneratePress-child
+*/
+.dnd_review_list {
+	.review {
+		line-height: 26px;
+		color: inherit;
+		.title {
+			color: #1e73be;
+		}
+		&:hover .title {
+			color: #333;
+		}
+	}
+	@media (max-width: 300px) {
+		> a.review {
+			grid-gap: 0px;
+			.date {
+				grid-column: span 2;
+				grid-row: 2;
+				text-align: left;
+			}
+			.starRender {
+				grid-column: span 2;
+				grid-row: 3;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.stars_wide {
+	margin-bottom: 16px;
+	.header {
+		font-weight: bold;
+	}
+	@media (min-width: 260px) {
+		display: flex;
+		flex-wrap: wrap;
+		.header {
+			text-align: right;
+			padding-right: 1em;
+		}
+		.starRender {
+			text-align: left;
+		}
+	}
+	> * {
+		flex: 1 0 auto;
+	}
+}
+.review-links {
+	margin-bottom: 16px;
+	ul {
+		list-style: none;
+		margin: 0px;
+	}
+}
+.dnd_review_meta h4 {
+	font-weight: bold;
+}
